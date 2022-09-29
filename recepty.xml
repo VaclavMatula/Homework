@@ -1,0 +1,10 @@
+<recipes>
+    <recipe>
+        <name>Čaj</name>
+        <ingredients>
+            <item amount="250" unit="ml">voda</item>
+            <item amount="1" unit="ks">čajový pytlík</item>
+        </ingredients>
+        <time unit="min">3</time>
+    </recipe>
+</recipes>
