@@ -1,0 +1,16 @@
+<simple-movies>
+    <movies>
+        <movie>
+            <name>Kingsman: The Secret Service</movies>
+            <year>2014</year>
+            <genre>action</genre>
+            <country>United Kingdom</country>
+        </movie>
+        <movie>
+            <name>The Lord of the Rings: The Fellowship of the Ring</movies>
+            <year>2001</year>
+            <genre>fantasy</genre>
+            <country>New Zealand</country>
+        </movie>
+    </movies>
+</simple-movies>
