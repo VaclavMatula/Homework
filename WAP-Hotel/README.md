@@ -8,4 +8,4 @@ Toto je jednoduchý PHP skript, který umožňuje uživatelům nahrát obrázek 
 
 Autoři: Václav Matula, ChatGTP
 
-Licence na to není, protože je to doslova obrázek z malování :D
+Licence na to není, protože je to doslova obrázek z malování (a ještě k tomu je hnusnej :)
