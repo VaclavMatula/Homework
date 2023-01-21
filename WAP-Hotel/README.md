@@ -5,3 +5,6 @@ Toto je jednoduchý web pro Hotel -VZDĚLÁVACÍ STŘEDISKO VARNSDORF, který zo
 Uploader
 
 Toto je jednoduchý PHP skript, který umožňuje uživatelům nahrát obrázek do specifické složky. Skript kontroluje správné heslo, typ souboru, velikost a chyby před nahráním souboru.
+
+Autoři: Václav Matula, chatGTP
+Licence na to není, protože je to doslova obrázek z malování :D
