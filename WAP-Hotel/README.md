@@ -8,4 +8,6 @@ Toto je jednoduchý PHP skript, který umožňuje uživatelům nahrát obrázek 
 
 Autoři: Václav Matula, ChatGTP
 
+Odkaz (responzivita pokazena reklamou): http://www.bubilek-neni.borec.cz/
+
 Licence na to není, protože je to doslova obrázek z malování (a ještě k tomu je hnusnej :)
