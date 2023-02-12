@@ -5,4 +5,4 @@ Jak program funguje:
 1. Na začátku se vytvoří pole vstupních typů a pole očekávaných typů.
 2. Pro každý vstupní typ a každý očekávaný typ se provede převod.
 3. Výstup a informace o převodu se ukládají do pole výsledků.
-4. Výsledky se zobrazí v HTML tabulce.
+4. Výsledky se zobrazí v HTML tabulce - která zároveň slouží jako shrnutí pravidel.
