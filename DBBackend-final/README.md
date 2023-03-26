@@ -1,5 +1,5 @@
 Readme pro projekt "Zobrazování entit z databáze v HTML tabulce"
-Tento projekt umožňuje připojení k MySQL databázi a zobrazování dat v podobě HTML tabulky. Projekt obsahuje dva soubory:
+Tento projekt umožňuje připojení k MySQL databázi a zobrazování dat v podobě HTML tabulky.
 
 Návod k použití
 Ujistěte se, že máte nainstalovaný server s podporou PHP a MySQL databáze.
