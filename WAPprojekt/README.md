@@ -1,4 +1,5 @@
 WAP Projekt - Administrace databáze
+
 Tento projekt je webová aplikace v PHP, která umožňuje administraci a správu databáze pomocí jednoduchého uživatelského rozhraní. Aplikace je postavena na principu objektově orientovaného programování a využívá vlastní implementaci rozhraní pro přístup k databázi.
 
 Funkce aplikace
