@@ -1,0 +1,99 @@
+/* Obecné styly */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Styly pro detaily o knize */
+.book-details {
+    margin-top: 20px;
+}
+
+.book-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Styly pro cenu a dostupnost */
+.book-pricing {
+    margin-top: 20px;
+}
+
+.price {
+    font-size: 20px;
+}
+
+.discount {
+    font-size: 18px;
+    color: #e74c3c; /* Červená barva pro slevu */
+}
+
+.availability {
+    font-size: 18px;
+    color: #27ae60; /* Zelená barva pro dostupnost */
+}
+
+/* Styly pro tlačítka akcí */
+.actions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Styly pro patičku */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.book-details {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.book-cover {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.book-cover img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.book-info {
+    flex: 2;
+}
