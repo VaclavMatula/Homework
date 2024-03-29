@@ -1,0 +1,61 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2dyk6xwttv81"]
+
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_nae0s"]
+[ext_resource type="Texture2D" uid="uid://dgg6e8gj42g1e" path="res://sprites/Starfield_07-512x512.png" id="1_yrfh1"]
+
+[node name="MainMenu" type="Node"]
+script = ExtResource("1_nae0s")
+
+[node name="Background" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 3.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_yrfh1")
+stretch_mode = 1
+
+[node name="level1" type="Button" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 100.0
+offset_top = 450.0
+offset_right = -902.0
+offset_bottom = -250.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "Level 1"
+flat = true
+
+[node name="level2" type="Button" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 100.0
+offset_top = 550.0
+offset_right = -902.0
+offset_bottom = -150.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "Level 2"
+flat = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 250.0
+offset_top = 204.0
+offset_right = 1003.0
+offset_bottom = 419.0
+theme_override_font_sizes/normal_font_size = 150
+text = "SPACE MATULA"
+tab_size = 10
+
+[connection signal="pressed" from="level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="level2" to="." method="_on_level_2_pressed"]
