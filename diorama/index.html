@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diorama</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+    #container {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, #87CEEB, #1E90FF);
+        perspective: 1000px;
+    }
+    #scene {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        animation: rotate 20s linear infinite;
+    }
+    .object {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+    }
+    .particle {
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: #FFF;
+        border-radius: 50%;
+        pointer-events: none;
+        transition: transform 0.5s, opacity 0.5s;
+    }
+    @keyframes rotate {
+        from {
+            transform: rotateY(0);
+        }
+        to {
+            transform: rotateY(360deg);
+        }
+    }
+</style>
+</head>
+<body>
+<div id="container">
+    <div id="scene">
+        <div class="object" style="top: 50%; left: 50%; transform: translate(-50%, -50%) rotateY(45deg);"></div>
+        <div class="object" style="top: 25%; left: 25%; transform: translate(-50%, -50%) rotateY(90deg);"></div>
+        <div class="object" style="top: 75%; left: 75%; transform: translate(-50%, -50%) rotateY(135deg);"></div>
+    </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const scene = document.getElementById('scene');
+        const particlesContainer = document.createElement('div');
+        particlesContainer.style.position = 'absolute';
+        particlesContainer.style.width = '100%';
+        particlesContainer.style.height = '100%';
+        particlesContainer.style.pointerEvents = 'none';
+        scene.appendChild(particlesContainer);
+
+        function createParticle(x, y) {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+            particle.style.left = `${x}px`;
+            particle.style.top = `${y}px`;
+            particlesContainer.appendChild(particle);
+            setTimeout(() => {
+                particle.style.opacity = '0';
+                particle.style.transform = 'scale(2)';
+            }, 10);
+            setTimeout(() => {
+                particle.remove();
+            }, 500);
+        }
+
+        scene.addEventListener('mousemove', function(e) {
+            const objects = document.querySelectorAll('.object');
+            objects.forEach(object => {
+                const bounding = object.getBoundingClientRect();
+                const centerX = bounding.left + bounding.width / 2;
+                const centerY = bounding.top + bounding.height / 2;
+                const mouseX = e.clientX;
+                const mouseY = e.clientY;
+                const deltaX = mouseX - centerX;
+                const deltaY = mouseY - centerY;
+                const angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
+                object.style.transform = `translate(-50%, -50%) rotateY(${angle}deg)`;
+            });
+            createParticle(e.clientX, e.clientY);
+        });
+    });
+</script>
+</body>
+</html>
