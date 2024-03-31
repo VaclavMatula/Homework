@@ -15,3 +15,14 @@ Tento projekt je jednoduchá webová stránka vytvořená pomocí HTML, CSS a Ja
 - Pohybem kurzoru myši po stránce se zobrazují částice, simulující efekt kouře.
 - Částice se objevují na pozici kurzoru myši a pomalu zesilují a zvětšují se, než zaniknou.
 - Tento efekt dodává interaktivnímu prostředí stránky další vizuální prvek.
+
+### Zobrazení roviny:
+- Na středu scény se nachází průhledná bílá rovina s pružnými čarami, která symbolizuje plochu, po které rotují objekty.
+- Tato rovina slouží jako vizuální referenční bod pro rotaci objektů a také jako plocha, na které se zobrazuje kouřový efekt.
+
+## Jak použít tuto stránku?
+- Stačí otevřít soubor `index.html` ve webovém prohlížeči.
+- Poté můžete pohybovat kurzorem myši po stránce a sledovat reakci objektů a kouřového efektu.
+
+## Podpora
+Pokud máte jakékoliv dotazy nebo problémy s touto stránkou, neváhejte nás kontaktovat. Rádi vám pomůžeme!
