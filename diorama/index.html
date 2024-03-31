@@ -33,6 +33,16 @@
         transform-style: preserve-3d;
         transition: transform 0.5s;
     }
+    .plane {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px dashed #FFF;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     .particle {
         position: absolute;
         width: 5px;
@@ -55,6 +65,7 @@
 <body>
 <div id="container">
     <div id="scene">
+        <div class="plane"></div>
         <div class="object" style="top: 50%; left: 50%; transform: translate(-50%, -50%) rotateY(45deg);"></div>
         <div class="object" style="top: 25%; left: 25%; transform: translate(-50%, -50%) rotateY(90deg);"></div>
         <div class="object" style="top: 75%; left: 75%; transform: translate(-50%, -50%) rotateY(135deg);"></div>
