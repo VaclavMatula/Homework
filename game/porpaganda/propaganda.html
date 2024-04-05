@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Matula</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #fff;
+            background-image: url('stars.jpg'); /* Přidání hvězd do pozadí */
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        main {
+            padding: 20px;
+            text-align: justify;
+            display: flex; /* Umožní rozložení obsahu v řádku */
+            flex-direction: column; /* Obsah bude ve sloupcích */
+            align-items: center; /* Zarovnání obsahu do středu */
+            margin-bottom: 150px; /* Odsazení dolu, aby nebyl footer zakrytý */
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            background-color: #FFD700;
+            color: #111;
+            padding: 10px 20px;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-bottom: 20px; /* Oddělení od textu */
+        }
+        .cta-button:hover {
+            background-color: #FFA500;
+        }
+        footer {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px; /* Zmenšení velikosti textu v footeru */
+        }
+        .video-container {
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            position: relative;
+            margin-bottom: 20px; /* Oddělení od textu */
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .text-container {
+            display: flex; /* Umožní rozložení obsahu v řádku */
+            margin-left: 20px; /* Malé odsazení zleva */
+            margin-right: 20px; /* Malé odsazení zprava */
+        }
+        .text-content {
+            flex: 1; /* Roztáhne tento blok na celou dostupnou šířku */
+            padding-right: 20px; /* Odsazení textu zprava */
+        }
+        img {
+            max-width: calc(100% + 20%); /* Zvětšení obrázku o 20% */
+            max-height: 300px; /* Maximální výška obrázku */
+            height: auto; /* Zachovává původní poměr stran obrázku */
+            margin-left: auto; /* Obrázek bude zarovnán doprava */
+            display: block; /* Zabraňuje zbytečnému prostoru pod obrázkem */
+            margin-top: 20px; /* Oddělení od textu nahoru */
+            margin-bottom: 100px; /* Mezera mezi obrázkem a textem */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Space Matula</h1>
+    </header>
+    <main>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/plcGZKnDBMc?autoplay=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="text-container">
+            <div class="text-content">
+                <p>Vítejte ve vesmíru! Připravte se na vzrušující dobrodružství ve hře Space Matula.</p>
+                <p>Space Matula je úžasná hra, která vás zavede do světa krátkého platformeru o dvou levelech. S hezkým "kradeným (free to use)" CRT efektem. Prozkoumejte vesmírnou základnu a získávejte body za překonání překážek a sbírání bonusů.</p>
+                <p>Hra vám nabídne výzvy a zábavu na každém kroku. Staňte se nejlepším hráčem vesmíru!</p>
+            </div>
+            <img src="milos.png" alt="Milos">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Space Matula. Všechna práva vyhrazena.</p>
+    </footer>
+</body>
+</html>
